@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Differentiable Agent-Based Models <br>[AAMAS '24]
+# Tutorial on Differentiable Probabilistic Programming for Agent-Based Models [ICAIF 2024]
 
 Welcome to the tutorial on differentiable agent-based models!
 
@@ -13,15 +13,13 @@ This tutorial will introduce a new paradigm for agent-based models (ABMs) that l
 1. An overview of vanilla AD and AD methods to differentiate through discrete stochastic programs.
 2. Examples of differentiable ABMs with millions of agents used to study disease spread across multiple countries.
 3. State-of-the-art methods for simulating, calibrating, and analyzing differentiable ABMs.
-4. Application of differentiable ABMs to epidemic modelling in New Zealand.
+4. Integration of differentiable ABMs into probabilistic programming pipelines.
+5. Applications of AD for generating synthetic populations.
 
 
 # Target audience
 
-The tutorial is aimed at the broader AAMAS community, with a particular focus on researchers interested in "modeling and simulation of societies". The main focus will be on recent advances in agent-based modeling through the use of automatic differentiation and deep neural network integration.
-
-The tutorial will feature demonstrations in Python, and all materials will be publicly released after the conference. Some prior experience in Python and PyTorch is desirable but not required.
-
+The tutorial is aimed at the thos in the ICAIF community who share an interest on agent-based modelling and how to make it deployable to the real world at scale. 
 
 # Outline and Schedule
 
@@ -29,20 +27,16 @@ Date: Monday 6th of May 2024.
 
 | Time | Session | Speaker |
 | --- | --- | --- |
-| 14:00 - 14:30 | State of ABM research and current challenges | Ayush Chopra |
-| 14:30 - 15:30 | Demonstration: Build a differentiable ABM in PyTorch | Arnau Quera-Bofarull|
-| 15:30 - 16:00 | Gradient-assisted ABM algorithms | Ayush Chopra |
-| 16:00 - 16:30 | Break | - |
-| 16:30 - 17:00 | Differentiable ABMs: a New Zealand application | Sijin Zhang |
-| 17:00 - 17:25 | Demonstration: Variational Inference with differentiable ABMs | Arnau Quera-Bofarull |
-| 17:25 - 17:50 | Demonstration: Building ABMs at scale with AgentTorch | Ayush Chopra |
-| 17:50 - 18:00 | Closing Remarks | - |
+| 08:00 - 08:30 | Automatic Differentiation for Agent-Based Models| Arnau Quera-Bofarull|
+| 08:30 - 09:00 | Gradient-assisted calibration techniques for ABMs| Joel Dyer|
+| 09:00 - 09:30 | Differentiable synthetic population generation | Nick Bishop and Imran Mahmood |
+| 09:30 - 09:45 | Closing remarks and future work | Arnau Quera-Bofarull |
 
 # Materials
 
 You can access the slides [here](webpage/AAMAS_Tutorial.pdf)
 
-The Jupyter notebooks for the tutorial can be found in the `tutorials` directory. You can access the google colab and markdown-rendered versions here:
+We also provided accompanying Jupyter notebooks for practical demonstrations of the presented methodologies. The notebooks can be found in the `tutorials` directory. You can access the google colab and markdown-rendered versions here:
 
 1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/arnauqb/diff_abms_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[Markdown]](01-automatic-differentiation)
 
@@ -58,6 +52,10 @@ The Jupyter notebooks for the tutorial can be found in the `tutorials` directory
 
 [Arnau Quera-Bofarull](https://www.arnau.ai) is a postdoctoral researcher at the Department of Computer Science of the University of Oxford.
 
-[Ayush Chopra](https://www.media.mit.edu/people/ayushc/overview/) is a PhD student at the MIT Media Lab.
+[Joel Dyer]() is a senior postdoctoral researcher at the University of Oxford’s Department of Computer Science and a Senior Research Fellow at the Oxford Institute for New Economic Thinking. 
 
-[Sijin Zhang](https://www.esr.cri.nz/staff-profiles/sijin-zhang) is a senior data scientist at the Institute of Environmental Science and Research (New Zealand).
+[Nick Bishop]() is a postdoctoral researcher at the University of Oxford working on the large agent collider (LAC) project.
+
+[Imran Mahmoood]() is a senior postdoctoral researcher at the Department of Computer Science, University of Oxford. 
+
+[Ayush Chopra](https://www.media.mit.edu/people/ayushc/overview/) is a PhD student at the MIT Media Lab.
