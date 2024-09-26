@@ -11,21 +11,21 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A (nearly) no-css minimalist Jekyll theme." />
 <meta property="og:description" content="A (nearly) no-css minimalist Jekyll theme." />
-<link rel="canonical" href="http://github.com/riggraz/no-style-please/https://arnauqb.github.io/diff_abms_tutorial/" />
-<meta property="og:url" content="http://github.com/riggraz/no-style-please/https://arnauqb.github.io/diff_abms_tutorial/" />
+<link rel="canonical" href="http://github.com/riggraz/no-style-please/https://largeagentcollider.github.io/icaif_tutorial/" />
+<meta property="og:url" content="http://github.com/riggraz/no-style-please/https://largeagentcollider.github.io/icaif_tutorial/" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Arnau Quera-Bofarull"},"description":"A (nearly) no-css minimalist Jekyll theme.","url":"http://github.com/riggraz/no-style-please/https://arnauqb.github.io/diff_abms_tutorial/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Arnau Quera-Bofarull"},"description":"A (nearly) no-css minimalist Jekyll theme.","url":"http://github.com/riggraz/no-style-please/https://largeagentcollider.github.io/icaif_tutorial/"}</script>
 <!-- End Jekyll SEO tag -->
-<link type="application/atom+xml" rel="alternate" href="http://github.com/riggraz/no-style-please/https://arnauqb.github.io/diff_abms_tutorial/feed.xml" title=" " /><link rel="shortcut icon" type="image/x-icon" href="/https://arnauqb.github.io/diff_abms_tutorial/logo.png" />
+<link type="application/atom+xml" rel="alternate" href="http://github.com/riggraz/no-style-please/https://largeagentcollider.github.io/icaif_tutorial/feed.xml" title=" " /><link rel="shortcut icon" type="image/x-icon" href="/https://largeagentcollider.github.io/icaif_tutorial/logo.png" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body a="light">
     <main class="page-content" aria-label="Content">
       <div class="w">
         <header>
-  <h1> </h1></header><ul></ul><h1 id="differentiable-agent-based-models-aamas-24">Differentiable Agent-Based Models <br />[AAMAS ‘24]</h1>
+  <h1> </h1></header><ul></ul><h1 id="tutorial-on-differentiable-probabilistic-programming-for-agent-based-models-icaif-2024">Tutorial on Differentiable Probabilistic Programming for Agent-Based Models [ICAIF 2024]</h1>
 
 <p>Welcome to the tutorial on differentiable agent-based models!</p>
 
@@ -37,14 +37,13 @@
   <li>An overview of vanilla AD and AD methods to differentiate through discrete stochastic programs.</li>
   <li>Examples of differentiable ABMs with millions of agents used to study disease spread across multiple countries.</li>
   <li>State-of-the-art methods for simulating, calibrating, and analyzing differentiable ABMs.</li>
-  <li>Application of differentiable ABMs to epidemic modelling in New Zealand.</li>
+  <li>Integration of differentiable ABMs into probabilistic programming pipelines.</li>
+  <li>Applications of AD for generating synthetic populations.</li>
 </ol>
 
 <h1 id="target-audience">Target audience</h1>
 
-<p>The tutorial is aimed at the broader AAMAS community, with a particular focus on researchers interested in “modeling and simulation of societies”. The main focus will be on recent advances in agent-based modeling through the use of automatic differentiation and deep neural network integration.</p>
-
-<p>The tutorial will feature demonstrations in Python, and all materials will be publicly released after the conference. Some prior experience in Python and PyTorch is desirable but not required.</p>
+<p>The tutorial is aimed at the thos in the ICAIF community who share an interest on agent-based modelling and how to make it deployable to the real world at scale.</p>
 
 <h1 id="outline-and-schedule">Outline and Schedule</h1>
 
@@ -60,53 +59,33 @@
   </thead>
   <tbody>
     <tr>
-      <td>14:00 - 14:30</td>
-      <td>State of ABM research and current challenges</td>
-      <td>Ayush Chopra</td>
-    </tr>
-    <tr>
-      <td>14:30 - 16:00</td>
-      <td>Demonstration: Build a differentiable ABM in PyTorch</td>
+      <td>08:00 - 08:30</td>
+      <td>Automatic Differentiation for Agent-Based Models</td>
       <td>Arnau Quera-Bofarull</td>
     </tr>
     <tr>
-      <td>16:00 - 16:30</td>
-      <td>Break</td>
-      <td>-</td>
+      <td>08:30 - 09:00</td>
+      <td>Gradient-assisted calibration techniques for ABMs</td>
+      <td>Joel Dyer</td>
     </tr>
     <tr>
-      <td>16:30 - 16:45</td>
-      <td>Gradient-assisted ABM algorithms</td>
-      <td>Ayush Chopra</td>
+      <td>09:00 - 09:30</td>
+      <td>Differentiable synthetic population generation</td>
+      <td>Nick Bishop and Imran Mahmood</td>
     </tr>
     <tr>
-      <td>16:45 - 17:15</td>
-      <td>Differentiable ABMs: a New Zealand application</td>
-      <td>Sijin Zhang</td>
-    </tr>
-    <tr>
-      <td>17:15 - 17:30</td>
-      <td>Demonstration: Variational Inference with differentiable ABMs</td>
+      <td>09:30 - 09:45</td>
+      <td>Closing remarks and future work</td>
       <td>Arnau Quera-Bofarull</td>
-    </tr>
-    <tr>
-      <td>17:30 - 17:45</td>
-      <td>Demonstration: Building ABMs at scale with AgentTorch</td>
-      <td>Ayush Chopra</td>
-    </tr>
-    <tr>
-      <td>17:45 - 18:00</td>
-      <td>Closing Remarks</td>
-      <td>-</td>
     </tr>
   </tbody>
 </table>
 
 <h1 id="materials">Materials</h1>
 
-<p>You can access the slides <a href="AAMAS_Tutorial.pdf">here</a></p>
+<p>You can access the slides <a href="webpage/AAMAS_Tutorial.pdf">here</a></p>
 
-<p>The Jupyter notebooks for the tutorial can be found in the <code class="language-plaintext highlighter-rouge">tutorials</code> directory. You can access the google colab and markdown-rendered versions here:</p>
+<p>We also provided accompanying Jupyter notebooks for practical demonstrations of the presented methodologies. The notebooks can be found in the <code class="language-plaintext highlighter-rouge">tutorials</code> directory. You can access the google colab and markdown-rendered versions here:</p>
 
 <ol>
   <li>
@@ -123,9 +102,13 @@
 
 <p><a href="https://www.arnau.ai">Arnau Quera-Bofarull</a> is a postdoctoral researcher at the Department of Computer Science of the University of Oxford.</p>
 
-<p><a href="https://www.media.mit.edu/people/ayushc/overview/">Ayush Chopra</a> is a PhD student at the MIT Media Lab.</p>
+<p><a href="">Joel Dyer</a> is a senior postdoctoral researcher at the University of Oxford’s Department of Computer Science and a Senior Research Fellow at the Oxford Institute for New Economic Thinking.</p>
 
-<p><a href="https://www.esr.cri.nz/staff-profiles/sijin-zhang">Sijin Zhang</a> is a senior data scientist at the Institute of Environmental Science and Research (New Zealand).</p>
+<p><a href="">Nick Bishop</a> is a postdoctoral researcher at the University of Oxford working on the large agent collider (LAC) project.</p>
+
+<p><a href="">Imran Mahmoood</a> is a senior postdoctoral researcher at the Department of Computer Science, University of Oxford.</p>
+
+<p><a href="https://www.media.mit.edu/people/ayushc/overview/">Ayush Chopra</a> is a PhD student at the MIT Media Lab.</p>
 
       </div>
     </main>

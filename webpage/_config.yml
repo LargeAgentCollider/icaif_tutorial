@@ -3,7 +3,7 @@ title: " "
 #description: Tutorial on differentiable ABMs at AAMAs 2024.
 author: Arnau Quera-Bofarull
 email: arnauq@protonmail.com
-baseurl: https://arnauqb.github.io/diff_abms_tutorial #"/webpage" 
+baseurl: https://largeagentcollider.github.io/icaif_tutorial #"/webpage" 
   #baseurl: /webpage
 
 kramdown:
