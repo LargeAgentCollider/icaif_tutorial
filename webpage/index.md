@@ -23,7 +23,8 @@ The tutorial is aimed at the thos in the ICAIF community who share an interest o
 
 # Outline and Schedule
 
-Date: Monday 6th of May 2024.
+Date: Friday 15th of November 2024
+
 
 | Time | Session | Speaker |
 | --- | --- | --- |
