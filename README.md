@@ -21,6 +21,7 @@ Date: Friday 15th of November 2024
 | Time | Session | Speaker |
 | --- | --- | --- |
 | 08:00 - 08:40 | Automatic Differentiation for Agent-Based Models| Nicholas Bishop|
+| 08:40 - 08:50 | Break| |
 | 08:50 - 09:45 | Gradient-assisted calibration techniques for ABMs| Joel Dyer|
 
 # Materials
