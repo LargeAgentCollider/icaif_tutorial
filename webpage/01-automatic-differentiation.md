@@ -11,11 +11,11 @@ import numpy as np
 
 # Automatic Differentiation
 
-Automatic differentation (AD) is a method to compute accurate derivatives of computer programs. It is a widely applicable method used in optimization problems such as the training of neural networks via gradient descent.
+Automatic differentation (AD) is a method to compute accurate derivatives of computer programs. AD is a widely applicable method often used to solve complex machine learning problems via gradient descent. In particular, libraries such as PyTorch leverage AD to train neural networks.
 
-Asside from machine learning applications, AD can be used in any context where we want to efficently and accurately compute the derivative of a suitable computer program.
+Aside from machine learning applications, AD can be used in any context where we want to efficently and accurately compute the derivative of a suitable computer program.
 
-As opposed to traditional approach for differentiation such as Finite Differences (FD), AD can evaluate the derivative of a function exactly and efficiently. Let's see an example:
+As opposed to traditional approaches for differentiation such as finite differences (FD), AD can evaluate the derivative of a function exactly and efficiently. Let's see an example:
 
 ## 1. Finite Differences
 
@@ -68,7 +68,7 @@ ax.legend()
     
 
 
-Seems to work really well! Let's check another example.
+This seems to work really well! Let's check another example.
 
 
 ```python
@@ -101,16 +101,16 @@ ax[1].legend()
     
 
 
-In this case, FD failed to obtain an accurate result for $\epsilon=10^{-2}$ and we had to signficantly reduce it to match the analytical result. This is a common problem in FD where choosing the right value for $\epsilon$ may require experimentation and manual tunning. Furthermore, the FD method does not scale well with the number of input dimensions. That is, if $x \in \mathbb R^n$, then we require $n$ evaluations to obtain all the $\partial f / x_i$. If we imagine $f$ to be a neural network with potentially milions of parameters, this makes FD an unpractical choice.
+In this case, FD failed to obtain an accurate result for $\epsilon=10^{-2}$ and we had to signficantly reduce $\epsilon$ to match the analytical result. This is a common problem in FD. Choosing the right value for $\epsilon$ may require experimentation and manual tunning. Furthermore, the FD method does not scale well with the number of input dimensions. That is, if $x \in \mathbb R^n$,  $n$ evaluations are required to obtain every partial derivative $\partial f / x_i$. If we imagine $f$ to be a neural network with potentially milions of parameters, this makes FD an impractical choice.
 
 ## 2.  Symbolic differentiation
 
-An alternative differentiation method to finite differences is Symbolic Differentiation (SD). This is the method implemented by software packages such as Mathematica, or the Python library sympy.
-The basic idea is to hard-code the derivative of basic functions such as $\sin(x), \exp(x)$, etc. and composition rules such as
+An alternative differentiation method is symbolic differentiation (SD). This is the method implemented by software packages such as Mathematica, or the Python library sympy.
+The fundamental idea is to hard-code the derivative for basic functions (such as $\sin(x), \exp(x)$) and exploit composition rules such as
 
 $$ (ab)' = a'b + ab' $$
 
-and apply them recursively to obtain the exact derivative of a function. Let's see how this works:
+which are applied recursively to obtain the exact derivative of a function. Let's see how this works:
 
 
 ```python
@@ -160,7 +160,7 @@ $\displaystyle 1000 \cos{\left(1000 x \right)}$
 
 
 
-What's the catch then? Well, let's try a more complicated function:
+What's the catch? Well, let's try a more complicated function:
 
 
 ```python
@@ -237,7 +237,9 @@ f(x_sym)
     TypeError: cannot determine truth value of Relational
 
 
-but this function is differentiable almost everywhere (except at $x=2$), so it is reasonable to expect to obtain a derivative outside of $x=2$.
+However, the function above is differentiable everywhere apart from $x=2$. We would like a method that computes derivatives when they are available rather than returning an error.
+
+ <!-- Hence, we would like a method that is reasonable to expect to obtain a derivative outside of $x=2$. -->
 
 
 ```python
@@ -261,7 +263,7 @@ plt.plot(x, y, "o-", markersize=3, lw=1)
 
 ## Expression representation
 
-The problem with "expression swell" is due to us using a poor representation of the analytical expression. 
+Expression swell is caused by using an inefficient representation of the analytical expression. 
 
 Consider the function:
 
@@ -284,9 +286,9 @@ But actually, there is a significantly more efficient representation:
 
 <img src="../figures/expression_dag.png" />
 
-This representation form is known as the expression DAG, or computational graph, and is a much more efficient way to store the computational trace of a computer program. This type of representation solves the 'expresion swell' problem.
+This representation form is known as the expression DAG, or computational graph, and is a much more efficient way to store the computational trace of a computer program. As a result, computational graphs significantly mitigate expression swell.
 
-In reverse-mode AD packages such as PyTorch implement efficient ways of generating and storing the computational graph:
+AD packages such as PyTorch and Tensorflow implement efficient ways of generating and storing the computational graph:
 
 
 ```python
@@ -321,13 +323,14 @@ Note: See [this ref](https://arxiv.org/pdf/1904.02990) as a source for the diffe
 
 ## Forward and Reverse mode automatic differentiation
 
-Once we have stored the computation graph of the program, we can compute the derivative of it by applying the chain rule through each of the operations of the diagram.
-This is equivalent to the way derivatives are obtained in the symbolic way, but the compact representation of the graph makes this problem way more tractable.
+Once we have stored the computation graph of the program, we can compute its derivative via repeated application of the chain rule through each of the operations in the diagram.
 
-In the diagram above, PyTorch has a differentiation rule for each of the rectangles that represent a function (i.e, Cos, Mul, Pow), etc. and we can easily obtain the total derivative by propagating through the chain rule.
+This is equivalent to the way derivatives are obtained in SD, but the compact representation of the graph prevents expression swell.
+
+In the diagram above, PyTorch has a differentiation rule for each of the rectangles that represent a function (i.e, Cos, Mul, Pow), etc. and we can easily obtain the total derivative by propagating derivatives through the chain rule.
 
 Note, however, that we have two equivalent ways of traversing the graph. We can start by the initial nodes $(x, y)$ and propagate the derivatives forward, or we can start by the final node $z$ and propagate them backwards.
-The former is known as Forward-mode AD and the latter corresponds to reverse-mode AD. Both give identical results but they exhibit different performance depending on the situation.
+The former is known as forward-mode AD and the latter corresponds to reverse-mode AD. Both give identical results but they exhibit different performance depending on the situation.
 
 Consider the two functions:
 
@@ -344,7 +347,7 @@ def f2(x1, x2, x3):
     return x1
 ```
 
-The computational graphs of f1 and f2 are:
+The computational graphs of $f_{1}$ and $f_{2}$ are:
 
 
 <p float="left">
@@ -352,7 +355,7 @@ The computational graphs of f1 and f2 are:
   <img src="../figures/multiple_inputs.png" height = 300 width="200" /> 
 </p>
 
-Note that for f1, if we start from the bottom ($x_1$) and then chain the derivatives forward, we can reuse the intermediate computation between the 1st and the 3rd node.
+Note that for $f_{1}$, if we start from the bottom ($x_1$) and then chain the derivatives forward, we can reuse the intermediate computation between the 1st and the 3rd node.
 If we start by the final nodes $(f_1, f_2, f_3)$ and work backwards, however, we need to traverse the graph 3 full times since we can't amortize any part of the computation.
 The reverse is true for $f_2$.
 
@@ -360,13 +363,13 @@ This example illustrates the following result. Given a function
 
 $$f: \mathbb R^m \longrightarrow \mathbb R^n,$$
 
-the computation of the jacobian
+the computation of the Jacobian
 
 $$(J_f)_{ij} = \left(\frac{\partial f_i}{x_{j}}\right)$$
 
-scales as $\mathcal O(m)$ for Forward-mode AD, and $\mathcal O(n)$ for reverse-mode AD.
+scales with $\mathcal O(m)$ for forward-mode AD, and $\mathcal O(n)$ for reverse-mode AD.
 
-In simpler words, we generally prefer to use forward-mode AD for functions with more inputs than outputs and viceversa. In machine learning, most training of neural networks requires the differentiation of the loss function, which is a function of many inputs (number of neural network parameters) and one output (e.g., result of L2 loss). For this reason, most AD packages focus such as PyTorch is on reverse-mode AD.
+In simpler words, we generally prefer to use forward-mode AD for functions with more inputs than outputs, while reverse-mode is preferred in the opposite case. In machine learning, training neural networks requires the differentiation of the loss function, which is a function of many inputs (number of neural network parameters) and one output (e.g., result of L2 loss). For this reason, most AD packages focus such as PyTorch is on reverse-mode AD.
 
 Let's run a few examples:
 

@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 
 ## Fixed noise distribution
 
-In the previous notebook (01-automatic-differentiation) we covered the basics of automatic differentiation (AD). However, we left an important detail for ABMs out. How can we compute the derivative of stochastic programs, and what does that mean, exactly?
+In the previous notebook (01-automatic-differentiation) we covered the basics of automatic differentiation (AD). However, there are more advanced concepts espcially relevant to ABMs that we are yet to cover. ABMs are typically *stochastic porgrams*. That is, given the same input, an ABM may produce different results from run to run as result of underlying randomness. Since stochastic programs are not deterministic functions, it is unclear how we may define and compute a derivative. This is what we will investigate next.
+
+<!-- How can we compute the derivative of stochastic programs, and what does that mean, exactly? -->
 
 Consider the following program with an input parameter $\theta$
 
@@ -40,13 +42,13 @@ $$
 \frac{\partial f(\theta)}{\partial \theta} =  \; ?
 $$
 
-If we think about the standard definition of derivative,
+Consider the standard definition of the derivative:
 
 $$
 \frac{\partial f(\theta)}{\partial \theta} =  \lim_{\epsilon \to 0} \frac{f(\theta+\epsilon) - f(\theta)}{\epsilon}.
 $$
 
-we can observe that this is not well defined since the difference $f(\theta+\epsilon) - f(\theta)$ will take random values and it is not clear how to treat this limit.
+We immediately observe that this is not well-defined determinstic quantity in our case since the difference $f(\theta+\epsilon) - f(\theta)$ takes on random values. This in turn means that the intepretation of the limit is unclear.
 
 However, in many cases, we are actually interested in the derivative of an **average** model realization, not just the derivative of a single run. In other words, we want to take gradients of the form
 
@@ -54,7 +56,7 @@ $$
 \mathbb E_{p(z)} [f_\theta(z)],
 $$
 
-where $p$ is a probability density and $f$ is a (deterministic) simulator with structural parameters $\theta$. Taking the derivative we have
+where $p$ is a probability density and $f$ is a (deterministic) simulator with structural parameters $\theta$. Taking the derivative with respect to $\theta$ yields
 
 $$
 \begin{align*}
@@ -64,7 +66,7 @@ $$
 \end{align*}
 $$
 
-so that the gradient of the expectation is the expectation of the gradient.
+where we have assumed $f$ is *sufficiently smooth* so that the gradient and expectation operators can be exchanged. We will revisit what this assumption presicely entails later on.
 
 In our considered example, this translates to
 
