@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # Tutorial on Differentiable Probabilistic Programming for Agent-Based Models [ICAIF 2024]
 
 Welcome to the tutorial on differentiable agent-based models!

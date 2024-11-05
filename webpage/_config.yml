@@ -4,7 +4,7 @@ title: " "
 author: Arnau Quera-Bofarull
 email: arnauq@protonmail.com
 baseurl: https://largeagentcollider.github.io/icaif_tutorial #"/webpage" 
-  #baseurl: /webpage
+#baseurl: /webpage
 
 kramdown:
   math_engine: mathjax
