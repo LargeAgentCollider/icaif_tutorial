@@ -35,7 +35,7 @@ You can access the slides [here](webpage/AAMAS_Tutorial.pdf)
 We also provided accompanying Jupyter notebooks for practical demonstrations of the presented methodologies. The notebooks can be found in the `tutorials` directory. You can access the Google colab and markdown-rendered versions here:
 
 1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/arnauqb/diff_abms_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[Markdown]](01-automatic-differentiation)
-2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/arnauqb/diff_abms_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[Markdown]](02-differentiating-randomness)
+2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[Markdown]](02-differentiating-randomness)
 3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/arnauqb/diff_abms_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[Markdown]](03-differentiable-abm)
 4. Variational Inference: [[Colab]](https://colab.research.google.com/github/arnauqb/diff_abms_tutorial/blob/main/notebooks/04-variational-inference.ipynb)[[Markdown]](04-variational-inference)
 
