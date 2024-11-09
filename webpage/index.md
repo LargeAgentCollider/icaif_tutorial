@@ -36,7 +36,7 @@ We have also created a set of Jupyter notebooks which provide a practical walkth
 
 1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb)
 2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)
-3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[nbviewer]](https://github.com/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)
+3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)
 4. Variational Inference: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)
 
 # Presenters
