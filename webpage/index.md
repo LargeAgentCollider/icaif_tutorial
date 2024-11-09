@@ -32,7 +32,7 @@ Date: Friday 15th of November 2024
 
 You can access the slides [here](webpage/AAMAS_Tutorial.pdf)
 
-We also provided accompanying Jupyter notebooks for practical demonstrations of the presented methodologies. The notebooks can be found in the `tutorials` directory. You can access the google colab and markdown-rendered versions here:
+We also provided accompanying Jupyter notebooks for practical demonstrations of the presented methodologies. The notebooks can be found in the `tutorials` directory. You can access the Google colab and markdown-rendered versions here:
 
 1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/arnauqb/diff_abms_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[Markdown]](01-automatic-differentiation)
 2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/arnauqb/diff_abms_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[Markdown]](02-differentiating-randomness)
@@ -43,6 +43,6 @@ We also provided accompanying Jupyter notebooks for practical demonstrations of 
 
 [Joel Dyer](https://joelnmdyer.github.io) is a senior postdoctoral researcher at the University of Oxford’s Department of Computer Science and a Senior Research Fellow at the Oxford Institute for New Economic Thinking. 
 
-[Nick Bishop]() is a postdoctoral researcher at the University of Oxford's Department of Computer Science.
+[Nick Bishop](http://www.nickbishop.net) is a postdoctoral researcher at the University of Oxford's Department of Computer Science.
 
 [Ani Calinescu]() is an Associate Professor at the University of Oxford's Department of Computer Science, a Senior Research Fellow at the Oxford Institute for New Economic Thinking, and a Co-Investigator on a UKRI-funded project on Robust Large-Scale Agent-Based Modelling, and a Co-PI or Co-Investigator on several JPMC Faculty Research Awards.
