@@ -30,10 +30,10 @@ Presentation slides will be made available soon.
 
 We have also created a set of Jupyter notebooks which provide a practical walkthrough of the tutorial material. You can access the Google colab and markdown-rendered versions of each notebook using the links below:
 
-1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[Markdown]](01-automatic-differentiation)
-2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[Markdown]](02-differentiating-randomness)
-3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[Markdown]](03-differentiable-abm)
-4. Variational Inference: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)[[Markdown]](04-variational-inference)
+1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb)
+2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)
+3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)
+4. Variational Inference: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)
 
 # Presenters
 
