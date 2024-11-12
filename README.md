@@ -7,7 +7,7 @@ Welcome to the tutorial on differentiable agent-based models!
 This tutorial will introduce a new paradigm for agent-based models (ABMs) that leverages automatic differentiation (AD) to efficiently compute simulator gradients. In particular, this tutorial will provide:
 
 1. An overview of vanilla AD and AD methods to differentiate through discrete stochastic programs.
-2. An example of how to build a differentiable economic ABM.
+2. A walkthrough on how to build a differentiable economic ABM.
 3. State-of-the-art methods for calibrating differentiable ABMs.
 
 # Target audience
