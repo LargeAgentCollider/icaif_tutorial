@@ -30,14 +30,14 @@ Date: Friday 15th of November 2024
 
 # Materials
 
-Presentation slides will be made available soon.
-
-We have also created a set of Jupyter notebooks which provide a practical walkthrough of the tutorial material. You can access the Google colab and nbviewer versions of each notebook via the links below:
+We have created a set of Jupyter notebooks which provide a practical walkthrough of the tutorial material. You can access the Google colab and nbviewer versions of each notebook via the links below. 
 
 1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb)
 2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)
 3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)
 4. Variational Inference: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)
+
+Presentation slides, which supplement the notebooks above, are available [here](({{ site.url }}/assets/icaif_slides.pdf)). 
 
 # Presenters
 
