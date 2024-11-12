@@ -37,7 +37,7 @@ We have created a set of Jupyter notebooks which provide a practical walkthrough
 3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)
 4. Variational Inference: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)
 
-Presentation slides, which supplement the notebooks above, are available [here](({{ site.url }}/assets/icaif_slides.pdf)). 
+Presentation slides, which supplement the notebooks above, are available [here]({{ site.url }}/icaif_slides.pdf). 
 
 # Presenters
 
