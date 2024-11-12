@@ -7,7 +7,7 @@ Welcome to the tutorial on differentiable agent-based models!
 This tutorial will introduce a new paradigm for agent-based models (ABMs) that leverages automatic differentiation (AD) to efficiently compute simulator gradients. In particular, this tutorial will provide:
 
 1. An overview of vanilla AD and AD methods to differentiate through discrete stochastic programs.
-2. Examples of differentiable ABMs with millions of agents used to study disease spread across multiple countries.
+2. An example of how to build a differentiable economic ABM.
 3. State-of-the-art methods for calibrating differentiable ABMs.
 
 # Target audience
@@ -26,19 +26,20 @@ Date: Friday 15th of November 2024
 
 # Materials
 
-Presentation slides will be made available soon.
-
-We have also created a set of Jupyter notebooks which provide a practical walkthrough of the tutorial material. You can access the Google colab and markdown-rendered versions of each notebook using the links below:
+We have created a set of Jupyter notebooks which provide a practical walkthrough of the tutorial material. You can access the Google colab and nbviewer versions of each notebook using the links below:
 
 1. Automatic Differentiation: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb) [[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/01-automatic-differentiation.ipynb)
 2. Differentiating Randomness: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/02-differentiating-randomness.ipynb)
 3. Differentiable ABMs: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/03-differentiable-abm.ipynb)
 4. Variational Inference: [[Colab]](https://colab.research.google.com/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)[[nbviewer]](https://nbviewer.org/github/LargeAgentCollider/icaif_tutorial/blob/main/notebooks/04-variational-inference.ipynb)
 
+
+Presentation slides, which supplement the notebooks above, are available [here]({{ site.baseurl }}/icaif_slides.pdf).
+
 # Presenters
 
 [Joel Dyer](https://joelnmdyer.github.io) is a senior postdoctoral researcher at the University of Oxford’s Department of Computer Science and a Senior Research Fellow at the Oxford Institute for New Economic Thinking. 
 
-[Nick Bishop](http://www.nickbishop.net) is a postdoctoral researcher at the University of Oxford, working within Department of Computer Science on problems at the intersection of machine learning and agent-based modelling.
+[Nick Bishop](http://www.nickbishop.net) is a postdoctoral researcher at the University of Oxford, working within the Department of Computer Science on problems at the intersection of machine learning and agent-based modelling.
 
 [Ani Calinescu]() is an Associate Professor at the University of Oxford's Department of Computer Science, a Senior Research Fellow at the Oxford Institute for New Economic Thinking, and a Co-Investigator on a UKRI-funded project on Robust Large-Scale Agent-Based Modelling, and a Co-PI or Co-Investigator on several JPMC Faculty Research Awards.
